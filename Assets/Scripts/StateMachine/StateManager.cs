@@ -44,7 +44,7 @@ public abstract class StateManager<EnumState> : MonoBehaviour where EnumState : 
 
     void FixedUpdate()
     {
-        if (!changingState || CurrentState == null)
+        if (changingState || CurrentState == null)
             return;
         
         CurrentState.FixedUpdateState();
