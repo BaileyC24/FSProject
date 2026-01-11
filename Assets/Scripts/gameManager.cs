@@ -1,3 +1,4 @@
+using UnityEditor.Build;
 using UnityEngine;
 
 public class gameManager : MonoBehaviour
@@ -10,7 +11,17 @@ public class gameManager : MonoBehaviour
     [SerializeField] GameObject menuLose;
     [SerializeField] GameObject menuHome;
 
+
+
+
     public bool isPaused;
+    public GameObject player;
+
+    //ToDo: link player controller script - Lorenzo
+    //public playerController playerScript; 
+
+
+
 
     float timeScaleOrig;
 
@@ -23,6 +34,11 @@ public class gameManager : MonoBehaviour
         instance = this;
         timeScaleOrig = Time.timeScale;
 
+        player = GameObject.FindWithTag("Player");
+
+        /* ToDo: link player controller script - Lorenzo
+        playerScript = player.GetComponent<playerController>();*/
+
     }
 
     // Update is called once per frame
@@ -34,6 +50,7 @@ public class gameManager : MonoBehaviour
             {
                 statePaused();
                 menuActive = menuPause;
+                menuActive.SetActive(true);
 
             }
             else if(menuActive == menuPause)
