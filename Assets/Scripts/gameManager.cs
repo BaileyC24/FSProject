@@ -34,6 +34,7 @@ public class gameManager : MonoBehaviour
             {
                 statePaused();
                 menuActive = menuPause;
+                menuActive.SetActive(true);
 
             }
             else if(menuActive == menuPause)
