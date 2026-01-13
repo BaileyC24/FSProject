@@ -324,6 +324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49434d0fbe8cdc44af4fc0569e1c029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStateMachine
+  health: 10
   speed: 5
   sprintSpeed: 10
   slideTargetDistance: 5

@@ -6,9 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="c53948aa-d7c5-4fca-b3da-d60d905e3aff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FSProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FSProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GraveYard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GraveYard.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Ilumisoft/Spooky Graveyard/Prefabs/Environment/Tree01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Ilumisoft/Spooky Graveyard/Prefabs/Environment/Tree01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Ilumisoft/Spooky Graveyard/Terrain/Demo Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Ilumisoft/Spooky Graveyard/Terrain/Demo Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LorenzosDevScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LorenzosDevScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Arrows_Arrows_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Arrows_Arrows_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/DoubleSided_Axes_low_Axes_DS_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/DoubleSided_Axes_low_Axes_DS_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_low_Swords_OH_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_low_Swords_OH_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Wooden Bow_1_Wooden Bow_1_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Wooden Bow_1_Wooden Bow_1_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Red Eyes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Red Eyes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Yellow Bones.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Yellow Bones.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat primary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat primary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat secondary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat secondary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat tertiary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat tertiary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Readme.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,31 +58,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "MoMo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Bailey&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Coding\C#\FSProject -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Coding\C#\FSProject" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
@@ -73,14 +91,12 @@
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\Coding\C#\FSProject -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\Coding\C#\FSProject" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -91,10 +107,9 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -105,7 +120,6 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="useMixedMode" value="false" />
       <method v="2" />
     </configuration>
     <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
@@ -124,6 +138,9 @@
       <workItem from="1767922394299" duration="5000" />
       <workItem from="1768167518258" duration="2233000" />
       <workItem from="1768240500156" duration="2528000" />
+      <workItem from="1768327865630" duration="445000" />
+      <workItem from="1768328764717" duration="5991000" />
+      <workItem from="1768336702904" duration="2999000" />
     </task>
     <servers />
   </component>

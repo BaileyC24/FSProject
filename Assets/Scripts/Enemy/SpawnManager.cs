@@ -13,22 +13,30 @@ public class SpawnManager : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < gameObject.transform.childCount; i++)
+        spawnPoints = new List<GameObject>();
+        for (int i = 0; i < transform.childCount; i++)
         {
-            spawnPoints.Add(gameObject.transform.GetChild(i).gameObject);
+            spawnPoints.Add(transform.GetChild(i).gameObject);
         }
 
-        StartCoroutine(Spawn());
+        
     }
 
-    IEnumerator Spawn()
+    public void StartSpawning(int enemyCount)
     {
-        yield return new WaitForSeconds(spawnBuffer);
+        StartCoroutine(Spawn(enemyCount));
+    }
+    
+    IEnumerator Spawn(int enemyCount)
+    {
         spawning = true;
         foreach (var spawnPoint in spawnPoints)
         {
             Instantiate(enemyPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            WaveManager.instance.enemiesAlive++;
+            yield return new WaitForSeconds(0.5f);
         }
+        spawning = false;
     }
     
 }
