@@ -20,6 +20,7 @@ public class gameManager : MonoBehaviour
 
 
 
+    
     public bool isPaused;
     public GameObject player;
 

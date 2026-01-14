@@ -15,6 +15,12 @@ public class PlayerJumpState : PlayerMovementState
 
     public override PlayerStateMachine.PlayerStates GetNextStateKey()
     {
-        return PlayerStateMachine.PlayerStates.Fall;
+        if (context.GetRb().linearVelocity.y <= -0.5)
+            return PlayerStateMachine.PlayerStates.Fall;
+
+        if (context.GetRb().linearVelocity.y < 0.1f)
+            return PlayerStateMachine.PlayerStates.Idle;
+            
+        return StateKey;
     }
 }

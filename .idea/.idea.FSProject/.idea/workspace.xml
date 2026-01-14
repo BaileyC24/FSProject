@@ -5,24 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c53948aa-d7c5-4fca-b3da-d60d905e3aff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerJumpState.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerJumpState.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FSProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FSProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MoDevScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MoDevScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GraveYard.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GraveYard.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/SpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LorenzosDevScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LorenzosDevScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerFallState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerFallState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerMovementState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/States/PlayerMovementState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/StateMachine/StateManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BurstAotSettings_StandaloneWindows.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/CommonBurstAotSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/WaveManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Arrows_Arrows_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Arrows_Arrows_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/DoubleSided_Axes_low_Axes_DS_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/DoubleSided_Axes_low_Axes_DS_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_low_Swords_OH_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Swords_low_Swords_OH_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Wooden Bow_1_Wooden Bow_1_AlbedoTransparency.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Free medieval weapons/Materials/Wooden Bow_1_Wooden Bow_1_AlbedoTransparency.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Red Eyes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Red Eyes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Yellow Bones.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Material Variations/Mini Simple Characters Mat Yellow Bones.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat primary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat primary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat secondary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat secondary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat tertiary.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Materials/Mini Simple Characters Demo Mat tertiary.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Readme.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity DL/Mini Simple Characters Skeleton Demo/Readme.asset.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerStateContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerJumpState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/States/Ground/PlayerSlideState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StateMachine/StateManager.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -51,9 +61,11 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;MoMo&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Bailey&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -124,6 +136,11 @@
       <workItem from="1767911911499" duration="5718000" />
       <workItem from="1767917719190" duration="3388000" />
       <workItem from="1767922394299" duration="5000" />
+      <workItem from="1768167518258" duration="2233000" />
+      <workItem from="1768240500156" duration="2528000" />
+      <workItem from="1768327865630" duration="445000" />
+      <workItem from="1768328764717" duration="5991000" />
+      <workItem from="1768336702904" duration="2999000" />
     </task>
     <servers />
   </component>
@@ -155,12 +172,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Player/States/Airborne/PlayerFallState.cs</url>
-          <line>5</line>
-          <properties documentPath="D:\Coding\C#\FSProject\Assets\Scripts\Player\States\Airborne\PlayerFallState.cs" containingFunctionPresentation="Constructor 'PlayerFallState'" />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
