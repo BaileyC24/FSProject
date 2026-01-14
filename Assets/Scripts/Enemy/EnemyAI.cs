@@ -51,10 +51,6 @@ public class EnemyAI : MonoBehaviour, IDamage
 
         StartCoroutine(setNav());
 
-        if (agent.remainingDistance <= agent.stoppingDistance)
-        {
-            faceTarget();
-        }
         if (attackTimer >= attackSpeed)
         {
             attack();
@@ -80,10 +76,14 @@ public class EnemyAI : MonoBehaviour, IDamage
         // get player state to determine if player is moving and within a set range
         //TODO: have enemy continue to go player if player can be seen by the enemy
         //TODO potentially change so that enemy only auto paths when player is moving too quickly or is seen
-        if (gameManager.instance.playerStateMachine.CurrentState.StateKey != PlayerStateMachine.PlayerStates.Idle && playerDistance <= detectRange)
+        if (gameManager.instance.playerScript.CurrentState.StateKey != PlayerStateMachine.PlayerStates.Idle && playerDistance <= detectRange)
         {
             agent.stoppingDistance = origStopDist;
             agent.SetDestination(gameManager.instance.player.transform.position);
+            if (agent.remainingDistance <= agent.stoppingDistance)
+            {
+                faceTarget();
+            }
         }
         else if (transform.position != pointOrig && navCooldown <= 0)
         {
