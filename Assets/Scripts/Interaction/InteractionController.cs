@@ -29,6 +29,11 @@ public class InteractionController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hitInfo, interactionDistance))
         {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Debug.LogWarning("Interact pressed on " + hitInfo.collider.gameObject.name); 
+            }
+
             Debug.Log("HIT: " + hitInfo.collider.gameObject.name);
             //Debug.Log("Looking at: " + hitInfo.collider.gameObject.name);
         }
