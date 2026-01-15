@@ -3,7 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>
+public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> , IDamage
 {
     public enum PlayerStates
     {
@@ -130,5 +130,14 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>
             rBody,
             transform,
             Camera.main);
+    }
+
+    public void takeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            gameManager.instance.youLose();
+        }
     }
 }

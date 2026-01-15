@@ -75,8 +75,8 @@ MonoBehaviour:
   damageAmount: 1
   damageRate: 0
   speed: 10
-  gravity: 35.28
-  verticalOffset: 1.48
+  gravity: 26.8
+  verticalOffset: 1.16
   destroyTime: 3
   hitEffect: {fileID: 3785360412475301167}
 --- !u!54 &8829970214444792151
