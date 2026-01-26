@@ -37,5 +37,10 @@ public class SpawnManager : MonoBehaviour
             currentEnemyCount ++; //0125
         }
     }
+
+    public void EnemyDied() //0125
+    {
+        currentEnemyCount --; 
+    }
     
 }
