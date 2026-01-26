@@ -9,6 +9,8 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private List<GameObject> spawnPoints;
     [SerializeField] private float spawnBuffer;
     [SerializeField] private int maxEnemies; //0125
+
+    private int currentEnemyCount = 0; //0125
     
     public bool spawning;
 
@@ -28,7 +30,11 @@ public class SpawnManager : MonoBehaviour
         spawning = true;
         foreach (var spawnPoint in spawnPoints)
         {
+            if (currentEnemyCount >= maxEnemies) //0125
+                yield break; 
+
             Instantiate(enemyPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            currentEnemyCount ++; //0125
         }
     }
     
