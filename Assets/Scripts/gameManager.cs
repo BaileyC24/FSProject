@@ -20,7 +20,7 @@ public class gameManager : MonoBehaviour
 
 
 
-
+    public GameObject playerSpawnPos;
     public Image playerHPBar;
     public bool isPaused;
     public GameObject player;
@@ -38,7 +38,7 @@ public class gameManager : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
 
         instance = this;
@@ -49,7 +49,7 @@ public class gameManager : MonoBehaviour
         
         playerScript = player.GetComponent<PlayerStateMachine>();
 
-        
+        playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
     }
 
     // Update is called once per frame
@@ -130,7 +130,7 @@ public class gameManager : MonoBehaviour
     public void updateGameGoal(int amount)
     {
         gameGoalCount += amount; ;
-        gameGoalText.text = "Enemies Remaining: " + gameGoalCount;
+        gameGoalText.text = gameGoalCount.ToString("F0");
 
         if (gameGoalCount <= 0)
         {

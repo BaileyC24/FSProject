@@ -148,7 +148,7 @@ Animator:
   m_GameObject: {fileID: 1420126735961266223}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 41f081d5c6d286c47a33bed3f84de79a, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46832a3eefea6e043ae6aa767744c94c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -185,7 +185,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   detectRange: 5
-  HP: 1
+  HP: 4
   faceTargetSpeed: 12
   navCooldown: 4.96
   sightDist: 11

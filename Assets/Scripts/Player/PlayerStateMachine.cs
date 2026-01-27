@@ -17,6 +17,7 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
     }
 
     public float HPOrig;
+    [SerializeField] CharacterController controller;
 
     #region Variables
 
@@ -26,7 +27,7 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
     [BoxGroup("Health Settings")]
     [Title("Base Health")]
     [GUIColor(1f, 0.9f, 0.8f)]
-    [Range(1f, 20f), SuffixLabel("hp", Overlay = true)]
+    [Range(10f, 200f), SuffixLabel("hp", Overlay = true)]
     [SerializeField] private float health;
     
     [BoxGroup("Movement Settings")]
@@ -97,9 +98,7 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
 
     public override void StartMethod()
     {   
-
-        HPOrig=health;
-        updatePlayerUI();
+        spawnPlayer();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         playerInput = new PlayerInput();
@@ -176,5 +175,12 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
         gameManager.instance.damageFlash.SetActive(true);
         yield return new WaitForSeconds(0.1f);
         gameManager.instance.damageFlash.SetActive(false);
+    }
+
+    public void spawnPlayer()
+    {
+        HPOrig = health;
+        updatePlayerUI();
+        controller.transform.position = gameManager.instance.playerSpawnPos.transform.position;
     }
 }
