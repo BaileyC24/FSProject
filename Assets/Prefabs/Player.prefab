@@ -1323,7 +1323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49434d0fbe8cdc44af4fc0569e1c029, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStateMachine
-  health: 10
+  HPOrig: 0
+  controller: {fileID: 0}
+  health: 100
   speed: 5
   sprintSpeed: 10
   slideTargetDistance: 5
@@ -1348,9 +1350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb690181ae24f90965b415c80335c37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAttack
+  AttackPos: {fileID: 0}
   attackSpeed: 0.55
   damageColor: {r: 0.7798742, g: 0.041691333, b: 0.041691333, a: 0}
-  attackPos: {fileID: 7411038355326898263}
 --- !u!33 &6812413740509817892
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2929,8 +2931,11 @@ MonoBehaviour:
   menuUpgrades: {fileID: 0}
   menuGuns: {fileID: 0}
   menuObjectives: {fileID: 0}
+  playerSpawnPos: {fileID: 0}
+  playerHPBar: {fileID: 0}
   isPaused: 0
   player: {fileID: 0}
+  damageFlash: {fileID: 0}
   playerScript: {fileID: 0}
   gameGoalText: {fileID: 205282530387681248}
 --- !u!1 &8049247670881959876
