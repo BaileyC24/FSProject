@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEditor.Build.Reporting;
 using UnityEngine.UI;
+using UnityEditor.Build.Content;
 
 public class gameManager : MonoBehaviour
 {
@@ -25,8 +26,15 @@ public class gameManager : MonoBehaviour
     public bool isPaused;
     public GameObject player;
     public GameObject damageFlash;
-   
-    
+    public PlayerAttack playerStats;
+    [SerializeField] int maxLevel;
+    [SerializeField] double nextLevel;
+    public int exp;
+    public int points;
+    int level;
+
+
+
     public PlayerStateMachine playerScript;
 
 
@@ -35,6 +43,16 @@ public class gameManager : MonoBehaviour
     float timeScaleOrig;
 
     public TMP_Text gameGoalText;
+
+    public TMP_Text pointsText;
+    public TMP_Text levelText;
+    public TMP_Text strText;
+    public TMP_Text attackSpdText;
+    public TMP_Text HealthText;
+
+
+
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -46,15 +64,20 @@ public class gameManager : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
 
-        
+        level = 1;
         playerScript = player.GetComponent<PlayerStateMachine>();
-
+        playerStats = player.GetComponent<PlayerAttack>();
         playerSpawnPos = GameObject.FindWithTag("Player Spawn Pos");
     }
 
     // Update is called once per frame
     void Update()
     {
+        levelText.text = "Level: " + level.ToString("F0") + "/" + maxLevel.ToString("F0");
+        pointsText.text = points.ToString("F0");
+        strText.text = "STR: " + playerStats.str.ToString("F0");
+        attackSpdText.text = "A.SPD:" + playerStats.attackSpeed.ToString();
+        HealthText.text = "HP: " + playerScript.health.ToString("F0") + "/" + playerScript.HPOrig.ToString("F0");
         if (Input.GetButtonDown("Cancel"))
         { 
             if(menuActive == null)
@@ -83,6 +106,13 @@ public class gameManager : MonoBehaviour
             stateUnpaused();
         }
 
+        if(exp >= nextLevel && level < maxLevel)
+        {
+            level++;
+            points += 3;
+            menuUpgrade();
+            nextLevel = (nextLevel * 1.3) + 2;
+        }
 
     }
 
