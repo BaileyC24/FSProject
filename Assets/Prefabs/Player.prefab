@@ -1279,6 +1279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1676351493095984229}
   - component: {fileID: 1906652068496863657}
+  - component: {fileID: -8444021959245061856}
   - component: {fileID: 7397870027801819440}
   - component: {fileID: 6812413740509817892}
   - component: {fileID: 4511972390370449720}
@@ -1324,7 +1325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStateMachine
   HPOrig: 0
-  controller: {fileID: 0}
+  controller: {fileID: -8444021959245061856}
   health: 100
   speed: 5
   sprintSpeed: 10
@@ -1338,6 +1339,31 @@ MonoBehaviour:
   stateText: {fileID: 6877820635486737620}
   collider: {fileID: 5086628511350846356}
   animator: {fileID: 5815566038473969114}
+--- !u!143 &-8444021959245061856
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4530762121446077718}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7397870027801819440
 MonoBehaviour:
   m_ObjectHideFlags: 0

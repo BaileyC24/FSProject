@@ -1,0 +1,12 @@
+using UnityEngine;
+
+public class TriggerWinZone : MonoBehaviour //can be attached to a GameObject in the scene
+{
+    private void OnTriggerEnter(Collider other) //Unity calls this automatically when something enters the trigger
+    {
+        if (other.CompareTag("Player")) //if the thing that enters the trigger is the player...
+        {
+            Debug.Log("Player reached Win Zone"); //print this message
+        }
+    }
+}
