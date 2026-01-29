@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections;
 
-public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> , IDamage
+public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> , IDamage, iPickup
 {
     public enum PlayerStates
     {
@@ -17,18 +17,18 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
     }
 
     public float HPOrig;
-    [SerializeField] CharacterController controller;
 
     #region Variables
 
     private PlayerStateContext context;
     private PlayerInput playerInput;
+
     
     [BoxGroup("Health Settings")]
     [Title("Base Health")]
     [GUIColor(1f, 0.9f, 0.8f)]
     [Range(10f, 200f), SuffixLabel("hp", Overlay = true)]
-    [SerializeField] private float health;
+    [SerializeField] public float health;
     
     [BoxGroup("Movement Settings")]
     [Title("Base Speeds")]
@@ -79,11 +79,6 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
     [GUIColor(1f, 1f, 0.8f)]
     [Required("Rigidbody is required for physics movement.")]
     [SerializeField] private Rigidbody rBody;
-
-    [BoxGroup("References")]
-    [GUIColor(1f, 1f, 0.8f)]
-    [SceneObjectsOnly]
-    [SerializeField] private TextMeshProUGUI stateText;
     
     [BoxGroup("References")]
     [GUIColor(1f, 1f, 0.8f)]
@@ -109,7 +104,6 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
 
     public override void UpdateMethod()
     {
-        stateText.text = "State: " + CurrentState.StateKey;
     }
     
     private void SetupState()
@@ -181,6 +175,13 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
     {
         HPOrig = health;
         updatePlayerUI();
-        controller.transform.position = gameManager.instance.playerSpawnPos.transform.position;
+        transform.position = gameManager.instance.playerSpawnPos.transform.position;
+    }
+    
+
+    public void getPowerUps(powerUps heal)
+    {
+        
+        health = heal.healthCurrent;
     }
 }
