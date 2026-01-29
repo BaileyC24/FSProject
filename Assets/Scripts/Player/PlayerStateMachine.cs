@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections;
 
-public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>, IDamage, iPickup
+public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>, IDamage, iPickup, IHealable
 {
     public enum PlayerStates
     {
@@ -188,5 +188,12 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>,
     public void GetAllyStats(SurvivorStats survivorStats)
     {
         // Player does not use ally stats
+    }
+
+    public void heal(int amount)
+    {
+        health += amount;
+        health = Mathf.Clamp(health, 0, HPOrig);
+        updatePlayerUI();
     }
 }

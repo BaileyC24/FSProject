@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.AI;
 using UnityEngine.Rendering.UI;
 
-public class AllyAI : MonoBehaviour, IDamage
+public class AllyAI : MonoBehaviour, IDamage, IHealable
 {
     [Header("Core")]
     [SerializeField] private NavMeshAgent agent;
@@ -163,7 +163,7 @@ public class AllyAI : MonoBehaviour, IDamage
         currentState = AllyState.Follow;
     }
 
-    // ------------------ Damage ------------------
+    // ------------------ Damage and Healing ------------------
 
     public void takeDamage(int amount)
     {
@@ -172,6 +172,11 @@ public class AllyAI : MonoBehaviour, IDamage
         {
             Destroy(gameObject);
         }
+    }
+
+    public void heal(int amount)
+    {
+        HP += amount;
     }
 
     // ------------------ Stat Injection ------------------
