@@ -37,12 +37,14 @@ public class enemyAI : MonoBehaviour, IDamage
     Vector3 pointOrig;
     float origStopDist;
     Color colorOrig;
+    
 
-    void Start()
+    void Awake()
     {
         colorOrig = models[0].material.color;
         pointOrig = transform.position;
         origStopDist = agent.stoppingDistance;
+       
     }
 
     void Update()
@@ -174,6 +176,7 @@ public class enemyAI : MonoBehaviour, IDamage
         foreach (Renderer model in models) model.material.color = Color.red;
         yield return new WaitForSeconds(0.1f);
         foreach (Renderer model in models) model.sharedMaterial.color = colorOrig;
+        
     }
 
     void dropItem()

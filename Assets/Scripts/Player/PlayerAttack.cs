@@ -12,11 +12,13 @@ public class PlayerAttack : MonoBehaviour
     private bool attacking;
     private readonly int AttackName = Animator.StringToHash("Attack");
     private AttackTrigger attackTrigger;
+    private PlayerStateMachine PSM;
 
     private void Start()
     {
         attackTrigger = GetComponentInChildren<AttackTrigger>();
         attackTrigger.ATKTRIGGER += CheckAttack;
+        PSM = GetComponent<PlayerStateMachine>();
     }
 
     private void Update()
@@ -33,6 +35,7 @@ public class PlayerAttack : MonoBehaviour
     void Attack()
     {
         StartCoroutine(AttackWindow());
+        AttackAudio();
     }
 
     void CheckAttack(Collider _target)
@@ -44,6 +47,18 @@ public class PlayerAttack : MonoBehaviour
             damage.takeDamage(str);
     }
 
+    void AttackAudio() {
+        StartCoroutine(DelayedAttackAudio());
+    }
+
+    IEnumerator DelayedAttackAudio() {
+        yield return new WaitForSeconds(0.75f); 
+        if (PSM != null && PSM.aud != null && PSM.audHit.Length > 0 && PSM.audHit[0] != null)
+            PSM.aud.PlayOneShot(PSM.audHit[0], PSM.volume);
+        else
+            Debug.LogError("Attack Audio failed — missing PSM, aud, or audio clip");
+    }
+    
     IEnumerator AttackWindow()
     {
         attacking = true;
