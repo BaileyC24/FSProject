@@ -1,10 +1,6 @@
-using Unity.VisualScripting;
-using UnityEditor.Build;
 using UnityEngine;
 using TMPro;
-using UnityEditor.Build.Reporting;
 using UnityEngine.UI;
-using UnityEditor.Build.Content;
 
 public class gameManager : MonoBehaviour
 {
@@ -112,6 +108,7 @@ public class gameManager : MonoBehaviour
             points += 3;
             menuUpgrade();
             nextLevel = (nextLevel * 1.3) + 2;
+            exp = 0;
         }
 
     }
@@ -159,7 +156,7 @@ public class gameManager : MonoBehaviour
 
     public void updateGameGoal(int amount)
     {
-        gameGoalCount += amount; ;
+        gameGoalCount += amount;
         gameGoalText.text = gameGoalCount.ToString("F0");
 
         if (gameGoalCount <= 0)
@@ -169,10 +166,6 @@ public class gameManager : MonoBehaviour
             menuActive.SetActive(true);
         }
     }
-
-
-
-
 
 
 
