@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Collections;
 
-public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> , IDamage
+public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> , IDamage, iPickup
 {
     public enum PlayerStates
     {
@@ -182,5 +182,12 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates> 
         HPOrig = health;
         updatePlayerUI();
         controller.transform.position = gameManager.instance.playerSpawnPos.transform.position;
+    }
+    
+
+    public void getPowerUps(powerUps heal)
+    {
+        
+        health = heal.healthCurrent;
     }
 }
