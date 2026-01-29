@@ -36,6 +36,14 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>,
     [Range(1f, 20f), SuffixLabel("m/s", Overlay = true)]
     [SerializeField] private float speed;
 
+    [BoxGroup("Audio Settings")]
+    [Title("Audio Source")]
+    [GUIColor(0.8f, 0.9f, 1f)]
+    [Range(0, 1), SuffixLabel("volume", Overlay = true)]
+    [SerializeField] public float volume;
+    [SerializeField] public AudioSource aud;
+    [SerializeField] public AudioClip[] audHit;
+    
     [BoxGroup("Movement Settings")]
     [GUIColor(0.8f, 1f, 0.8f)]
     [Range(1f, 30f), SuffixLabel("m/s", Overlay = true)]
