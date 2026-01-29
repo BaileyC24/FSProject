@@ -5744,9 +5744,25 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5571729481018847622, guid: 171eeb9f2d0293e4092185e466ef8536,
         type: 3}
+      propertyPath: dropChance
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571729481018847622, guid: 171eeb9f2d0293e4092185e466ef8536,
+        type: 3}
       propertyPath: droppedObj
       value: 
       objectReference: {fileID: 1475553505}
+    - target: {fileID: 5571729481018847622, guid: 171eeb9f2d0293e4092185e466ef8536,
+        type: 3}
+      propertyPath: dropPrefabs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5571729481018847622, guid: 171eeb9f2d0293e4092185e466ef8536,
+        type: 3}
+      propertyPath: 'dropPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3199720909439884744, guid: 3a48f2ac21590b1449363c9983016193,
+        type: 3}
     - target: {fileID: 6689553464380089143, guid: 171eeb9f2d0293e4092185e466ef8536,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36719,6 +36735,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6520582355736025641, guid: 23dffd880d03e524c85a3cfb216e61b5,
+        type: 3}
+      propertyPath: healingAmount
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7543574828054548437, guid: 23dffd880d03e524c85a3cfb216e61b5,
         type: 3}
       propertyPath: m_LocalPosition.x
