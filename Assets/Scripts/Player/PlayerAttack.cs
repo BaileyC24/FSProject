@@ -10,7 +10,6 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private Color damageColor;
     private float attackTimer;
     private bool attacking;
-    private readonly int AttackName = Animator.StringToHash("Attack");
     private AttackTrigger attackTrigger;
     private PlayerStateMachine PSM;
 
@@ -52,7 +51,8 @@ public class PlayerAttack : MonoBehaviour
     }
 
     IEnumerator DelayedAttackAudio() {
-        yield return new WaitForSeconds(0.75f); 
+        yield return new WaitForSeconds(0.15f);
+        
         if (PSM != null && PSM.aud != null && PSM.audHit.Length > 0 && PSM.audHit[0] != null)
             PSM.aud.PlayOneShot(PSM.audHit[0], PSM.volume);
         else
@@ -63,7 +63,7 @@ public class PlayerAttack : MonoBehaviour
     {
         attacking = true;
         attackTimer = 0f;
-        gameManager.instance.playerScript.GetAnimator().SetTrigger(AttackName);
+        gameManager.instance.playerScript.GetAnimator().SetTrigger("Attack");
         yield return new WaitForSeconds(gameManager.instance.playerScript.GetAnimator().GetCurrentAnimatorClipInfo(0).Length);
         attacking = false;
     }
