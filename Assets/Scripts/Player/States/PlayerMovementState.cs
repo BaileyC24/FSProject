@@ -16,6 +16,8 @@ public class PlayerMovementState : PlayerStateBase
         context.SetMoveValue(context.GetInput().Player.Movement.ReadValue<Vector2>());
         context.CheckForGround();
         context.UpdatePlayerRotation();
+        
+        context.GetRb().linearDamping = context.IsGrounded() ? 5f : 0f;
     }
 
     public override void LateUpdateState()

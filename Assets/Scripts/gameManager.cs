@@ -47,10 +47,7 @@ public class gameManager : MonoBehaviour
     public TMP_Text HealthText;
 
 
-
-
-
-
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -94,8 +91,7 @@ public class gameManager : MonoBehaviour
             
         if (Input.GetButtonDown("U") && menuActive == false)
         {
-                  
-                  menuUpgrade();
+            menuUpgrade();
         }
         else if(menuActive == menuUpgrades && Input.GetButtonDown("Cancel") || Input.GetButtonDown("U"))
         {
