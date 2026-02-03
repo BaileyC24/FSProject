@@ -14,17 +14,19 @@ public class buttonFunctions : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         gameManager.instance.stateUnpaused();
-
-
+    }
+    
+    public void play()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void quit()
     {
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        SceneManager.LoadScene(0);
+        gameManager.instance.stateUnpaused();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
 

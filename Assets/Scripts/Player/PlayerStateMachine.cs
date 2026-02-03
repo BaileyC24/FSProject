@@ -1,3 +1,4 @@
+using System;
 using Sirenix.OdinInspector;
 using TMPro;
 using Unity.VisualScripting;
@@ -203,5 +204,10 @@ public class PlayerStateMachine : StateManager<PlayerStateMachine.PlayerStates>,
         health += amount;
         health = Mathf.Clamp(health, 0, HPOrig);
         updatePlayerUI();
+    }
+
+    private void OnDisable()
+    {
+        playerInput.Disable();
     }
 }
